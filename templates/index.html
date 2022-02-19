@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Mauricio Hernández Portfolio</title>
+</head>
+<body>
+    <aside>
+        <figure>
+            <div id="avatar"></div>
+
+            <figcaption>Mauricio Eduardo Hernández Reyes</figcaption>
+            
+        </figure>
+       <img src="images/menu.svg">
+
+
+       <nav>
+
+           <ul>
+               <li><a href="/">Home</a></li>
+               <li><a href="/about">About</a></li>
+               <li><a href="/service">Services</a></li>
+               <li><a href="/contact">Contact</a></li>
+           </ul>
+       </nav>
+
+    </aside>
+    <main>
+        <h1>Estudiante en Escuela Superior de Economía y Negocios ESEN</h1>
+        <p> Responsable, resiliente y líder. Dispuesto a aportar valor a su alrededor y aplicar sus conocimientos 
+            en el cargo desempeñado mientras continua su desarrollo profesional e impulsa a los demás a dar lo 
+            mejor de si mismos</p>
+
+        <a href = "/about" class="cta">About me</a>
+
+    </main>
+
+    <script>
+        (function() {
+            var menu = document.querySelector("ul"),
+                menulink = document.querySelector("img");
+            menulink.addEventListener("click", function(e) {
+                menu.classList.toggle("active");
+                e.preventDefault();
+            });
+        })();
+    </script>
+    
+</body>
+</html>
+
